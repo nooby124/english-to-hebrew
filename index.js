@@ -34,9 +34,40 @@ document.getElementById('convert').onclick = function() {
     var z3 = z2.replaceAll(".", "ץ")
     var z4 = z3.replaceAll("'", ',')
     var z5 = z4.replaceAll("/", ".")
-    if (z5 == '') {
-        document.getElementById('end').innerHTML = "you didnt enter any text"
+    var capsa = z5.replaceAll("A", "ש")
+    var capsb = capsa.replaceAll("B", "נ")
+    var capsc = capsb.replaceAll("C", "ב")
+    var capsd = capsc.replaceAll("D", "ג")
+    var capse = capsd.replaceAll("E", "ק")
+    var capsf = capse.replaceAll("F", "כ")
+    var capsg = capsf.replaceAll("G", "ע")
+    var capsh = capsg.replaceAll("H", "י")
+    var capsi = capsh.replaceAll("I", "ן")
+    var capsj = capsi.replaceAll("J", "ח")
+    var capsk = capsj.replaceAll("K", "ל")
+    var capsl = capsk.replaceAll("L", "ך")
+    var capsm = capsl.replaceAll("M", "צ")
+    var capsn = capsm.replaceAll("N", "מ")
+    var capso = capsn.replaceAll("O", "ם")
+    var capsp = capso.replaceAll("P", "פ")
+    var capsq = capsp.replaceAll("Q", "/")
+    var capsr = capsq.replaceAll("R", "ר")
+    var capss = capsr.replaceAll("S", "ד")
+    var capst = capss.replaceAll("T", "א")
+    var capsu = capst.replaceAll("U", "ו")
+    var capsv = capsu.replaceAll("V", "ה")
+    var capsw = capsv.replaceAll("W", "'")
+    var capsx = capsw.replaceAll("X", "ס")
+    var capsy = capsx.replaceAll("Y", "ט")
+    var capsz = capsy.replaceAll("Z", "ז")
+    var capsz1 = capsz.replaceAll(";", "ף")
+    var capsz2 = capsz1.replaceAll(",", "ת")
+    var capsz3 = capsz2.replaceAll(".", "ץ")
+    var capsz4 = capsz3.replaceAll("'", ',')
+    var capsz5 = capsz4.replaceAll("/", ".")
+  if (capsz5 == '') {
+    document.getElementById('end').innerHTML = "you didnt enter any text"
         return
     }
-    document.getElementById('end').innerHTML = "that is: " + z5
-};
+    document.getElementById('end').innerHTML = "that is: " + capsz5
+}
